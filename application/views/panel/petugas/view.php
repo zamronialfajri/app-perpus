@@ -31,8 +31,8 @@
                     <img src="<?= base_url()?>assets/img/petugas/<?= $row->foto_petugas;?>" width="50">
                   </td>
                   <td>
-                    <a href=""class="btn btn-sm btn-success">Edit</a>
-                    <a href=""class="btn btn-sm btn-danger">Delete</a>
+                    <a href="<?= base_url()?>panel/Petugas/edit/<?= $row->id_petugas;?>"class="btn btn-sm btn-success">Edit</a>
+                    <a href="<?= base_url()?>panel/Petugas/delete/<?= $row->id_petugas;?>"class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?');">Delete</a>
                   </td>
                 </tr>
               <?php }

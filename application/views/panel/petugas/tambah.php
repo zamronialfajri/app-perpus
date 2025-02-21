@@ -32,6 +32,7 @@
               <div class="form-group  col-12">
                 <label>Upload Foto <small class="text-danger">*</small></label>
                 <input type="file" name="foto_petugas" class="form-control" required>
+                <small class="text-danger">Foto harus berupa JPG atau PNG dengan maksimal Kapasitas 2mb</small>
               </div>
             </div>
 

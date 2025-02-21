@@ -23,7 +23,7 @@
         <div class="sidebar-brand-icon">
           <img src="<?= base_url()?>assets/img/logo.png">
         </div>
-        <div class="sidebar-brand-text mx-3">Perpus Online</div>
+        <div class="sidebar-brand-text mx-3">Gain Library</div>
       </a>
       <hr class="sidebar-divider my-0">
       <li class="nav-item active">
