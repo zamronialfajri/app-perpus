@@ -32,7 +32,7 @@ class Petugas Extends CI_Controller{
         $this->load->library('upload', $config);
         if(!$this->upload->do_upload('foto_petugas')){
             $this->session->set_flashdata('gagal', 'file yang diupload harus berupa JPG atau PNG dengan maksimal kapsitasas 2mb');
-            redirect('panel/Panel/tambah');
+            redirect('panel/Petugas/tambah');
         }else{
             $upload_data = $this->upload->data();
             $data = array(

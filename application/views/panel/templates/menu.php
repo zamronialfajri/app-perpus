@@ -23,7 +23,7 @@
         <div class="sidebar-brand-icon">
           <img src="<?= base_url()?>assets/img/logo.png">
         </div>
-        <div class="sidebar-brand-text mx-3">Gain Library</div>
+        <div class="sidebar-brand-text mx-3">Perpuspedia</div>
       </a>
       <hr class="sidebar-divider my-0">
       <li class="nav-item active">
@@ -41,7 +41,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?= base_url()?>panel/Anggota">
           <i class="fa fa-users" aria-hidden="true"></i>
           <span>Anggota</span>
         </a>
