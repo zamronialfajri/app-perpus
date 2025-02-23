@@ -55,7 +55,7 @@
         </a>
         <div id="dataMaster" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="alerts.html">Pengarang</a>
+            <a class="collapse-item" href="<?= base_url()?>panel/Pengarang">Pengarang</a>
             <a class="collapse-item" href="buttons.html">Penerbit</a>
             <a class="collapse-item" href="dropdowns.html">Rak</a>
             <a class="collapse-item" href="modals.html">Kategori</a>
