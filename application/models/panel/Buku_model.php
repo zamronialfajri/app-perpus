@@ -55,17 +55,17 @@ class Buku_model Extends CI_Model{
         $this->db->where('id_buku', $id_buku);
         return $this->db->get()->row_array();
     }
-    
+
     public function update($id_buku, $data)
     {
         $this->db->where('id_buku', $id_buku);
         $this->db->update('buku', $data);
     }
 
-    // public function delete($id_anggota)
-    // {
-    //     $this->db->where('id_anggota', $id_anggota);
-    //     $this->db->delete('anggota');
-    // }
+    public function delete($id_buku)
+    {
+        $this->db->where('id_buku', $id_buku);
+        $this->db->delete('buku');
+    }
 
 }

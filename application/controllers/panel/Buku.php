@@ -112,16 +112,24 @@ class Buku Extends CI_Controller{
         }
     }
 
+    public function detail($id_buku)
+    {
+        $data['buku']      = $this->Buku_model->edit($id_buku);
+        $this->load->view('panel/templates/menu');
+        $this->load->view('panel/buku/detail', $data);
+        $this->load->view('panel/templates/footer');
+    }
 
-    // public function delete($id_anggota)
-    // {
-    //     $foto_lama = $this->db->get_where('anggota', array('id_anggota' => $id_anggota))->row_array();
-    //     $delete = $this->Anggota_model->delete($id_anggota);
-    //     if($delete = true){
-    //         $this->session->set_flashdata('sukses', 'Data berhasil didelete');
-    //         unlink('assets/img/anggota/'.$foto_lama['foto_anggota']);
-    //         redirect('panel/Anggota');
-    //     }
-    // }
+
+    public function delete($id_buku)
+    {
+        $foto_lama = $this->db->get_where('buku', array('id_buku' => $id_buku))->row_array();
+        $delete = $this->Buku_model->delete($id_buku);
+        if($delete = true){
+            $this->session->set_flashdata('sukses', 'Data berhasil didelete');
+            unlink('assets/img/buku/'.$foto_lama['gambar_buku']);
+            redirect('panel/Buku');
+        }
+    }
 
 }
