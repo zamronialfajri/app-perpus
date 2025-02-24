@@ -25,6 +25,7 @@
   <script src="<?= base_url()?>assets/vendor/datatables/jquery.dataTables.min.js"></script>
   <script src="<?= base_url()?>assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
   <script src="<?= base_url()?>assets/js/sweetalert2.all.min.js"></script>
+  <script src="<?= base_url()?>assets/vendor/select2/dist/js/select2.min.js"></script>
 
 <script>
   <?php 
@@ -57,6 +58,14 @@
       $('#dataTable').DataTable(); // ID From dataTable 
       $('#dataTableHover').DataTable(); // ID From dataTable with Hover
     });
+
+    $('.select2-single').select2();
+
+      // Select2 Single  with Placeholder
+      $('.select2-single-placeholder').select2({
+        placeholder: "Select a Province",
+        allowClear: true
+      });
   </script>
 </body>
 

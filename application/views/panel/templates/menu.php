@@ -12,6 +12,7 @@
   <link href="<?= base_url()?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="<?= base_url()?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="<?= base_url()?>assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <link href="<?= base_url()?>assets/vendor/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css">
   <link href="<?= base_url()?>assets/css/ruang-admin.min.css" rel="stylesheet">
 </head>
 
@@ -59,7 +60,7 @@
             <a class="collapse-item" href="<?= base_url()?>panel/Penerbit">Penerbit</a>
             <a class="collapse-item" href="<?= base_url()?>panel/Rak">Rak</a>
             <a class="collapse-item" href="<?= base_url()?>panel/Kategori_buku">Kategori Buku</a>
-            <a class="collapse-item" href="popovers.html">Buku</a>
+            <a class="collapse-item" href="<?= base_url()?>panel/Buku">Buku</a>
           </div>
         </div>
       </li>
