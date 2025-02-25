@@ -19,6 +19,7 @@
   <link href="<?= base_url()?>assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <link href="<?= base_url()?>assets/vendor/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css">
   <link href="<?= base_url()?>assets/css/ruang-admin.min.css" rel="stylesheet">
+  <script src="<?= base_url()?>assets/vendor/jquery/jquery.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -78,7 +79,7 @@
         </a>
         <div id="sirkulasi" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="alerts.html">Peminjaman</a>
+            <a class="collapse-item" href="<?= base_url()?>panel/Peminjaman">Peminjaman</a>
             <a class="collapse-item" href="buttons.html">Pengembalian</a>
           </div>
         </div>
