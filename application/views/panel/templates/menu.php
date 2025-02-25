@@ -1,3 +1,8 @@
+<?php
+  $this->db->where('status_logo', 'Aktif');
+  $logo = $this->db->get('logo')->row_array();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +27,7 @@
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon">
-          <img src="<?= base_url()?>assets/img/logo.png">
+          <img src="<?= base_url()?>assets/img/logo/<?= $logo['gambar_logo'];?>">
         </div>
         <div class="sidebar-brand-text mx-3">Perpuspedia</div>
       </a>
@@ -87,9 +92,9 @@
         </a>
         <div id="pengaturan" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="alerts.html">Denda</a>
-            <a class="collapse-item" href="buttons.html">Logo</a>
-            <a class="collapse-item" href="buttons.html">Background</a>
+            <a class="collapse-item" href="<?= base_url()?>panel/Denda">Denda</a>
+            <a class="collapse-item" href="<?= base_url()?>panel/Logo">Logo</a>
+            <a class="collapse-item" href="<?= base_url()?>panel/Background">Background</a>
           </div>
         </div>
       </li>

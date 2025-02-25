@@ -1,3 +1,10 @@
+<?php
+  $this->db->where('status_logo', 'Aktif');
+  $logo = $this->db->get('logo')->row_array();
+
+  $this->db->where('status_background', 'Aktif');
+  $background = $this->db->get('background')->row_array();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +26,7 @@
 </head>
 
 <body class="bg-gradient-login">
-  <img src="<?= base_url()?>assets/img/bg.jpg" alt="" class="bg">
+  <img src="<?= base_url()?>assets/img/background/<?= $background['gambar_background'];?>" alt="" class="bg">
   <!-- Login Content -->
   <div class="container-login transparant mt-5">
     <div class="row justify-content-center">
@@ -30,7 +37,7 @@
               <div class="col-lg-12">
                 <div class="login-form">
                   <div class="text-center">
-                    <img src="<?= base_url()?>assets/img/logo.png" alt="" width="100" class="mb-3">
+                    <img src="<?= base_url()?>assets/img/logo/<?= $logo['gambar_logo'];?>" alt="" width="100" class="mb-3">
                     <h1 class="h4 text-gray-900 mb-4 font-weight-bold">Login</h1>
 
                   </div>
